@@ -1,0 +1,255 @@
+:root{
+    --t1-bg-color:#89b0bd;
+    --t2-bg-color:rgb(97 124 134);
+    --body-bg-color:#6d7779;
+    --text-color-1:#fff8f2;
+    --text-color-2:#fff8f2;
+    --fade-color:grey;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+grid{
+    display:grid;
+    grid-template-columns: .5fr .01fr 1fr 1fr .01fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+/* header styled through mostly generic tags. may need to change later */
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: var(--t1-bg-color);
+    padding: 10px 0px;
+}
+
+header h3{
+    background-color: var(--t2-bg-color);
+    font-size: 2em;
+    padding: 10px;
+    color: var(--text-color-2);
+}
+
+header ul{
+    position: relative;
+    list-style: none;
+    margin:0px 10px;
+    margin-top: 38px;
+    justify-content: flex-end;
+}
+
+header ul li{
+    display:inline;
+    padding: 0px 10px;
+}
+
+a{
+    color: var(--text-color-2);
+    text-decoration: none;
+    
+}
+
+.banner-container{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.banner-img{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    
+}
+
+/* default for aside. use row-border/placeholder classes for aside spanning multiple rows*/
+aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right:var(--text-color-2) solid 2px;
+    margin: 20px 0px;
+}
+
+aside h2{
+    display: flex;
+    position:relative;
+    justify-content:flex-end;
+    padding-right: 10px;
+    font-size: 2em;
+    color: var(--text-color-2);
+}
+
+
+.row-border-merge-bottom{
+    margin-bottom: 0px;
+}
+
+.placeholder{
+    margin: 0px;
+}
+
+.row-border-merge-top{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.text-container{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin: 20px 0px;
+}
+
+.content{
+    padding-left:20px;
+}
+
+p{
+    color: var(--text-color-1);
+}
+
+/* adjust image position in container classes*/
+.big-img-container{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.small-img-container-left{
+    display: flex;
+    justify-content: flex-end;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 10px;
+}
+
+.small-img-container-right{
+    display: flex;
+    justify-content: flex-start;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin: 10px;
+}
+/* watch for conflict of generic img in future */
+img{
+    object-fit: cover;
+    border: black solid 2px;
+}
+
+.big-img{
+    height:150px;
+    width:600px;
+    background-color: var(--fade-color);
+    opacity: .4;
+}
+
+.small-img{
+    height:150px;
+    width:290px;  
+    background-color: var(--fade-color);
+    opacity: .4;
+}
+
+.big-img:hover{
+    opacity: 1;
+}
+
+.small-img:hover{
+    opacity:1;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    background-color: var(--t1-bg-color);
+    padding: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display:inline;
+    color: var(--text-color-1);    
+    margin: 0px 1em;
+}
+
+/* resize for smaller screen, changes image size, nav tags, and aside positions */
+
+@media screen and (max-width: 768px){
+    /* resized images */
+    .big-img{
+        height: 100px;
+        width: 400px;
+    }
+
+    .small-img{
+        height: 100px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .big-img{
+        height: 75px;
+        width: 300px;
+    }
+
+    .small-img{
+        height: 75px;
+        width: 140px;
+    }
+
+    aside{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        border-right:var(--text-color-2) solid 0px;
+        border-bottom:var(--text-color-2) solid 2px;
+        margin: 20px 0px;
+    }
+
+    aside h2{
+        display: flex;
+        position:relative;
+        justify-content:flex-start;
+        padding-left: 10px;
+        font-size: 2em;
+        color: var(--text-color-2);
+    }
+    
+    .row-border-merge-bottom{
+        margin-bottom: 0px;
+        border-bottom:var(--text-color-2) solid 2px;
+    }
+    
+    .placeholder{
+        margin: 0px;
+        border-bottom:var(--text-color-2) solid 0px;
+    }
+    
+    .row-border-merge-top{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-bottom:var(--text-color-2) solid 0px;
+    }
+}
+    
+
