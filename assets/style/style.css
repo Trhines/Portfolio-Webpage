@@ -138,6 +138,12 @@ p{
     margin: 10px;
 }
 
+.small-text-left{
+   position:relative;
+   right: 13em;
+   top: 3em;
+}
+
 .small-img-container-right{
     display: flex;
     justify-content: flex-start;
@@ -145,6 +151,14 @@ p{
     grid-column-end: 5;
     margin: 10px;
 }
+
+.small-text-right{
+    position:relative;
+    right: 13.5em;
+    top: 3em;
+ }
+
+
 /* watch for conflict of generic img in future */
 img{
     object-fit: cover;
