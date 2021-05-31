@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/myStyle.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <nav>
+              <ul>
+                <li>
+                  YO MAMA
+                </li>
+              </ul>
+            </nav>
+            <div class="name">
+              <div calss="name-border">
+                <h1 class="display-4 white font-7">Trenton Rhines</h1>
+                <p class="lead white font-2">Freelance Web Developer</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="tab">
+
+                <div class="tab-container">
+                  <button class="tablinks active" id ="defaultOpen" onclick="openCity(event, 'about')">About Me</button>
+                </div>
+
+                <div class="tab-container">
+                  <button class="tablinks" onclick="openCity(event, 'work')">My Work</button>
+                </div>
+
+                <div class="tab-container">
+                <button class="tablinks" onclick="openCity(event, 'experience')">Experience</button>
+                </div>
+
+                <div class="tab-container">
+                  <button class="tablinks" onclick="openCity(event, 'contact')">Contact Me</button>
+                </div>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="about" class="tabcontent">
+                <h3>About Me</h3>
+                  <div class="content">
+                    <img class="portrait" src="assets\images\despair.jpg">
+                    <p class="bio">Hi, I'm Trenton Rhines. I am dedicated to establishing myself as a web developer. 
+                      <br>After working in the Audio/Video production industry, 
+                      <br>it's time to break into the world of IT.
+                    </p>
+                  </div>
+              </div>
+              
+              <div id="work" class="tabcontent">
+                <h3>My Work</h3>
+
+                <div class="row">
+
+                      <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="assets\images\weatherApp.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Weather App</h5>
+                          <p class="card-text">A weather app where you can search for current and future weather forcasts at cities around the globe.</p>
+                        </div>
+                        <div class="card-footer">
+            
+                            <a class="btn btn-secondary" href="https://trhines.github.io/weather-dashboard/">View Page</a>
+
+                            <a class="btn btn-secondary github-link" href="https://github.com/Trhines/weather-dashboard.git">
+                              <div class="icon"><img class="github-icon" src="assets\images\GitHub-Mark-32px.png"></div>
+                            </a>
+                      
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="assets\images\Quiz.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Coding Quiz</h5>
+                          <p class="card-text">A quiz to test your basic coding knowledge.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-secondary" href="https://trhines.github.io/Coding-Quiz/">View Page</a>
+                            <a class="btn btn-secondary github-link" href="https://github.com/Trhines/Coding-Quiz.git">
+                              <div class="icon"><img class="github-icon" src="assets\images\GitHub-Mark-32px.png"></div>
+                            </a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="assets\images\Screenshot 2021-05-16 203923.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Work Day Scheduler</h5>
+                          <p class="card-text">A planner to track your activities of the day.</p>
+                        </div>
+                        <div class="card-footer">
+            
+                            <a class="btn btn-secondary" href="https://trhines.github.io/scheduler/">View Page</a>
+
+                            <a class="btn btn-secondary github-link" href="https://github.com/Trhines/scheduler.git">
+                              <div class="icon"><img class="github-icon" src="assets\images\GitHub-Mark-32px.png"></div>
+                            </a>
+                      
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="assets\images\stats.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Stat Compare</h5>
+                          <p class="card-text">Look up your Overwatch or Fortnite stats and compare them against your friends.</p>
+                        </div>
+                        <div class="card-footer">
+            
+                            <a class="btn btn-secondary" href="https://trhines.github.io/loldota/">View Page</a>
+
+                            <a class="btn btn-secondary github-link" href="https://github.com/Trhines/loldota.git">
+                              <div class="icon"><img class="github-icon" src="assets\images\GitHub-Mark-32px.png"></div>
+                            </a>
+                      
+                        </div>
+                      </div>
+
+
+
+              </div>
+              
+              <div id="experience" class="tabcontent">
+                <h3>Experience</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+
+              <div id="contact" class="tabcontent">
+                <h3>Contact Me</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="assets\Javascript.js"></script>
+    </body>
+</html>

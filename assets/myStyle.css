@@ -1,0 +1,161 @@
+
+:root{
+    --gold: #d89d46;
+    --white: white;
+    --clear: #ffffff00;
+    --darkBlue: rgb(16 41 70 / 1);
+}
+
+.dark-blue{
+    background-color: var(--darkBlue);
+}
+
+.gold{
+    color:var(--gold);
+}
+
+.white{
+    color:var(--white)
+}
+
+.clear{
+    background-color: var(--clear);
+}
+
+.name{
+    padding:5rem;
+    
+}
+
+.name-border{
+    border-left:white solid .15rem; 
+}
+
+.font-7{
+    font-size: 5rem;
+    text-align: left;
+}
+
+.font-2{
+    font-size: 2rem;
+    text-align: left;
+}
+
+.mountain{
+    object-fit: cover;
+    overflow:hidden;
+}
+
+.jumbotron{
+    background-color: var(--clear);
+    background-image: url(mountain-547363_1920.jpg);
+}
+
+.navbar-dark{
+    border-color: white;
+} 
+
+.bg-dark{
+    border-color:white
+}
+
+.tab {
+    display:flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-top:2rem;
+    
+    /* border: 1px solid #ccc; */
+    /* background-color: var(--darkBlue);  */
+  }
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+.tab button{
+    border-bottom: solid white .05rem;
+}
+
+.tab button.active {
+    border-bottom: solid black .05rem;
+}
+  
+.tab button:hover {
+    border-bottom: solid rgb(184, 184, 184) .05rem;
+}
+  
+  
+
+.tabcontent {
+    display: flex;
+    padding: 3rem 0rem;
+    
+    border-top: none;
+}
+
+.portrait{
+    display:flex;
+    justify-content: center;
+    object-fit: scale-down;
+    overflow:hidden;
+    max-height:20rem;
+    max-width:20rem;
+    float:left;
+}
+
+.bio{
+    display:flex;
+    align-items: center;
+    padding:1rem;
+
+
+}
+.content{
+    display:flex;
+}
+
+.card-img-top{
+    height: 115px;
+}
+
+.card{
+    margin:1rem;
+}
+
+.link-container{
+    position:absolute;
+    top:15.6rem;
+    left:1rem;
+}
+
+.btn{
+    max-height: 38px;
+    background-color: white;
+    color:black;
+    position: relative;
+    right: -.6rem;
+} 
+
+.icon{
+    position:relative;
+    bottom:.187rem;
+}
+
+.card-footer{
+    background-color: white;
+    border-color:white;
+}
+
+
+
+
+
+
+
